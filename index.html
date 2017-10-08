@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mary Xu</title>
+	<link rel="icon" type="image/png" href="/assets/images/icon.png"/>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<nav id="fixed-nav-bar">
+    <ul>
+        <li><a class="active link" href=#title>Top</a></li>
+        <li><a class="link" href=#about id="nav-about">About</a></li>
+        <li><a class="link" href=#projects>Projects</a></li>
+        <li><a href="assets/Resume.pdf" target="_blank">Resume</a></li>
+        <li><a class="link" href=#contact>Contact</a></li>
+    </ul>
+</nav>
+
+<section id="title" class="page">
+    <div class="centered-absolute">
+        <h1 id="title-name">Rui Li (Mary) Xu</h1>
+        <img class="border-img" src="assets/images/portrait.png" width="200px">
+    </div>
+    <div class="bottom-absolute" id="arrow">
+        <a href=#about><i class="fa fa-arrow-down hover-opacity" aria-hidden="true"></i></a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="top-relative">
+        <h2>About Me</h2>
+    </div>
+    <div class="div-max-width border-text">
+        <p class="block-text">Hello world! My name is Mary Xu, and I am currently a freshman studying computer science at the University of California, Berkeley. I am passionate about coding, making, and power-napping.</p>
+        <p class="block-text">I have experience with backend development using Python and Java as well as frontend development using HTML, CSS and JavaScript. I am also a part of the Maker Movement and have built projects using Arduino and the VEX robotics system.</p>
+        <p class="block-text">In general, I am enthusiastic about creating technology that can better our everyday lives, and I am always looking to learn new skills. Check out some of my projects below!</p>
+    </div>
+    <div class="bottom-absolute" id="arrow">
+        <a href=#projects><i class="fa fa-arrow-down hover-opacity" aria-hidden="true"></i></a>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="top-relative">
+        <h2>Projects</h2>
+    </div>
+    <ul class="project-items div-max-width">
+        <li class="project">
+            <figure>
+                <div class="view">
+                    <img src="assets/images/cb-mentored.png"/>
+                </div>
+                <figcaption>
+                    <p>Tools: HTML, CSS, JavaScript/jQuery</p>
+                    <p><a href="https://github.com/codebase-berkeley-mentored-project-fa17" target="_blank">Github</a>
+                    <p>Part of mentored project team at Berkeley CodeBase.</p>
+                </figcaption>
+            </figure>
+            <div class="project-title">CodeBase Application Portal</div>
+        </li>
+        <li class="project">
+            <figure>
+                <div class="view">
+                    <img src="assets/images/girls-in-stem.png"/>
+                </div>
+                <figcaption>
+                    <p>Tools: HTML, CSS, JavaScript, PHP</p>
+                    <p><a href="irvington.org/girlsinstem">Website</a>
+                    <p>Designed and developed website for high school club.</p>
+                </figcaption>
+            </figure>
+            <div class="project-title">Girls in STEM Website</div>
+        </li>
+        <li class="project">
+            <figure>
+                <div class="view">
+                    <img src="assets/images/rc-car.png"/>
+                </div>
+                <figcaption>
+                    <p>Tools: Ardunio, electronic prototyping, CAD</p>
+                    <p><a href="http://www.instructables.com/id/Bluetooth-RC-Drone-Car/" target="_blank">Instructables</a></p>
+                    <p>App-controlled toy car for robotics SIDE project.</p>
+                </figcaption>
+            </figure>
+            <div class="project-title">Bluetooth RC Drone Car</div>
+        </li>
+        <li class="project">
+            <figure>
+                <div class="view">
+                    <img src="assets/images/child-monitor.png"/>
+                </div>
+                <figcaption>
+                    <p>Tools: Ardunio, Java (Android Studio)</p>
+                    <p><a href="assets/ScienceFair.pptx" target="_blank">Presentation</a></p>
+                    <p>Alameda County Sciecne and Engineering Fair; Mechanical Engineering and Instruments 1st Place</p>
+                </figcaption>
+            </figure>
+            <div class="project-title">BT Position Device for Child Monitoring</div>
+        </li>
+    </ul>
+    <div class="bottom-absolute" id="arrow">
+        <a href=#contact><i class="fa fa-arrow-down hover-opacity" aria-hidden="true"></i></a>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="top-relative">
+        <h2 id="contact-title">Contact Me</h2>
+    </div>
+    <div class="centered-absolute">
+        <div class = "icon-row">
+            <div class="icon-container">
+                <a href="mailto:ruili.xu@berkeley.edu" target="_blank">
+                    <i class="fa fa-envelope hover-opacity"></i>
+                </a>
+            </div>
+            <div class="icon-container">
+                <a href="https://www.github.com/rlxu" target="_blank">
+                    <i class="fa fa-github hover-opacity"></i>
+                </a>
+            </div>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/ruili-xu/" target="_blank">
+                    <i class="fa fa-linkedin hover-opacity"></i>
+                </a>
+            </div>
+            <div class="icon-container">
+                <a href="https://www.facebook.com/maryxu99" target="_blank">
+                    <i class="fa fa-facebook-official hover-opacity"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-absolute">
+        <p class="copyright">&copy; Mary Xu 2017</p>
+    </div>
+</section>
+
+<script src="myScripts.js"></script>
+</body>
+</html>
