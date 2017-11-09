@@ -52,7 +52,7 @@ table {
 
 /* General */
 body, html {
-    background: #bad4ff;
+    background: white;
 }
 
 a {
@@ -81,8 +81,8 @@ h4 {
 }
 
 p {
-    font: 14px/150% 'PT Sans', Arial, sans-serif;
-    color: #949494;
+    font: 16px/150% 'PT Sans', Arial, sans-serif;
+    color: #2B2B2B;
     margin-bottom: 20px;
 }
 
@@ -136,4 +136,67 @@ figure {
 }
 
 /* Title */
+.centered-absolute {
+    border: none;
+    padding: 10px;
+}
 
+.border-img {
+    border: 5px solid #d3d3d3;
+    margin-top: 20px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#title-name {
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em; 
+}
+
+#arrow {
+    border: none;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1em;
+    color: #d3d3d3;
+}
+
+.hover-opacity {
+    color: #d3d3d3;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.hover-opacity:hover {
+    color: #2B2B2B;
+}
+
+/* About Me */ 
+.section-title {
+    text-align: center;
+}
+
+.border-text {
+    border: 2px solid #d3d3d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-text {
+    max-width: 1000px;
+    padding: 20px 20px 20px 20px;
+}
+
+/* Projects */
+
+
+/* Contact */
+.icon-row {
+    display: inline-block;
+}

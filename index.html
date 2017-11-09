@@ -9,6 +9,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script> window.addEventListener("hashchange", function() { scrollBy(0, -60) })</script>
 </head>
 
 <body>
@@ -25,30 +27,28 @@
 
 <section id="title" class="page">
     <div class="centered-absolute">
-        <img class="border-img" src="assets/images/portrait.png" width="200px"><h1 id="title-name">Rui Li (Mary) Xu</h1>
+        <img class="border-img" src="assets/images/portrait.png"><h1 id="title-name">Rui Li (Mary) Xu</h1>
     </div>
     <div class="bottom-absolute" id="arrow">
-        <a href=#about><i class="fa fa-arrow-down hover-opacity" aria-hidden="true"></i></a>
+        <a href=#about><i class="fa fa-arrow-down hover-opacity fa-2x" aria-hidden="true"></i></a>
     </div>
 </section>
 
 <section id="about">
-    <div class="top-relative">
-        <h2>About Me</h2>
+    <div>
+        <h2 class="section-title">About Me</h2>
     </div>
     <div class="div-max-width border-text">
-        <p class="block-text">Hello! My name is Mary Xu, and I am currently a freshman studying computer science at the University of California, Berkeley. I am passionate about coding, making, and power-napping.</p>
-        <p class="block-text">I have experience with backend development using Python and Java as well as frontend development using HTML, CSS and JavaScript. I am also a part of the Maker Movement and have built projects using Arduino and the VEX robotics system.</p>
-        <p class="block-text">In general, I am enthusiastic about creating technology that can better our everyday lives, and I am always looking to learn new skills. Check out some of my projects below!</p>
+        <p class="block-text">Hello! My name is Mary Xu, and I am currently a freshman studying computer science at the University of California, Berkeley. I am passionate about coding, making, and power-napping. I have experience with backend development using Python and Java as well as frontend development using HTML, CSS and JavaScript. I am also a part of the Maker Movement and have built projects using Arduino and the VEX robotics system. In general, I am enthusiastic about creating technology that can better our everyday lives, and I am always looking to learn new skills. Check out some of my projects below!</p>
     </div>
     <div class="bottom-absolute" id="arrow">
-        <a href=#projects><i class="fa fa-arrow-down hover-opacity" aria-hidden="true"></i></a>
+        <a href=#projects><i class="fa fa-arrow-down hover-opacity fa-2x" aria-hidden="true"></i></a>
     </div>
 </section>
 
 <section id="projects">
-    <div class="top-relative">
-        <h2>Projects</h2>
+    <div>
+        <h2 class="section-title">Projects</h2>
     </div>
     <ul class="project-items div-max-width">
         <li class="project">
@@ -92,36 +92,28 @@
         </li>
     </ul>
     <div class="bottom-absolute" id="arrow">
-        <a href=#contact><i class="fa fa-arrow-down hover-opacity" aria-hidden="true"></i></a>
+        <a href=#contact><i class="fa fa-arrow-down hover-opacity fa-2x" aria-hidden="true"></i></a>
     </div>
 </section>
 
 <section id="contact">
-    <div class="top-relative">
-        <h2 id="contact-title">Contact Me</h2>
+    <div>
+        <h2 class="section-title">Contact Me</h2>
     </div>
     <div class="centered-absolute">
         <div class = "icon-row">
-            <div class="icon-container">
-                <a href="mailto:ruili.xu@berkeley.edu" target="_blank">
-                    <i class="fa fa-envelope hover-opacity"></i>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="https://www.github.com/rlxu" target="_blank">
-                    <i class="fa fa-github hover-opacity"></i>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="https://www.linkedin.com/in/ruili-xu/" target="_blank">
-                    <i class="fa fa-linkedin hover-opacity"></i>
-                </a>
-            </div>
-            <div class="icon-container">
-                <a href="https://www.facebook.com/maryxu99" target="_blank">
-                    <i class="fa fa-facebook-official hover-opacity"></i>
-                </a>
-            </div>
+            <a href="mailto:ruili.xu@berkeley.edu" target="_blank">
+                <i class="fa fa-envelope hover-opacity fa-2x"></i>
+            </a>
+            <a href="https://www.github.com/rlxu" target="_blank">
+                <i class="fa fa-github hover-opacity fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ruili-xu/" target="_blank">
+                <i class="fa fa-linkedin hover-opacity fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/maryxu99" target="_blank">
+                <i class="fa fa-facebook-official hover-opacity fa-2x"></i>
+            </a>
         </div>
     </div>
     <div class="bottom-absolute">
