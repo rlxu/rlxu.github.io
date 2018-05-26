@@ -1,5 +1,49 @@
-.container {
+.top {
+  margin: 20px 20px 20px 20px;
+}
+
+#my-logo img {
+  opacity: 0;
+  max-width: 200px;
+  max-height: 200px;
+  width: 30%;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  -webkit-transition: opacity 2s ease-in;
+     -moz-transition: opacity 2s ease-in;
+      -ms-transition: opacity 2s ease-in;
+       -o-transition: opacity 2s ease-in;
+          transition: opacity 2s ease-in;
+}
+
+.load img {
+  opacity: 1;
+}
+
+.main-container {
+  max-width: 1000px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.nav-wrapper {
+  width: 100%;
+  background-color: white;
+}
+
+#nav-bar {
   font-family: 'Sunflower', sans-serif;
+  overflow: hidden;
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 15;
+  border-bottom: 1px solid #d3d3d3;
   max-width: 1000px;
   width: 75%;
   margin: 0 auto;
@@ -14,11 +58,16 @@
   color: grey;
 }
 
+.content {
+  padding-top: 105px;
+}
+
 .about {
+  top: 0;
+  position: relative;
+  height: 100%;
   font-family: 'PT Sans', sans-serif;
-  max-width: 1000px;
-  width: 70%;
-  margin: 0 auto;
+  padding: 8px 16px 8px 16px;
 }
 
 .paragraph {
@@ -30,7 +79,17 @@
   color: #3b5998;
 }
 
+.fb:hover {
+  font-weight: bold;
+  color: grey;
+}
+
 .cb {
   font-weight: bold;
   color: #00B0DA;
+}
+
+.cb:hover {
+  font-weight: bold;
+  color: grey;
 }
