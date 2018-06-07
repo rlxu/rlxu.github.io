@@ -1,3 +1,3 @@
 # rlxu.github.io
 Personal portfolio website <br />
-Work in progress.
+Check out some of my past projects and experience!

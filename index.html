@@ -1,119 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mary Xu</title>
-	<link rel="icon" type="image/png" href="/assets/images/icon.png"/>
-	<link rel="stylesheet" href="styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
+    <!-- Import fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:500" rel="stylesheet">
 
-<nav id="fixed-nav-bar">
-    <ul id="nav" class="nav">
-        <li><a class="active link" href=#title>Top</a></li>
-        <li><a class="link" href=#about id="nav-about">About</a></li>
-        <li><a class="link" href=#projects>Projects</a></li>
-        <li><a href="assets/Resume.pdf" target="_blank">Resume</a></li>
-        <li><a class="link" href=#contact>Contact</a></li>
-    </ul>
-</nav>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
-<section id="title" class="page">
-    <img class="border-img" src="assets/images/portrait.jpg">
-    <h1 id="title-name">Mary Xu</h1>
-</section>
-
-<section id="about">
-    <div>
-        <h2 class="section-title">About Me</h2>
+    <title>Mary Xu</title>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="assets/js/before.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <img id="my-logo" onload="fadeIn()" src="images/logo.png"/>
     </div>
-    <div class="center">
-        <p class="block-text">Hello! My name is Mary Xu, and I am currently a freshman studying computer science at the University of California, Berkeley. I am passionate about coding, making, and power-napping. I have experience with backend development using Python and Java as well as frontend development using HTML, CSS and JavaScript. I am also a part of the Maker Movement and have built projects using Arduino and the VEX robotics system. In general, I am enthusiastic about creating technology that can better our everyday lives, and I am always looking to learn new skills. Check out some of my projects below!</p>
-    </div>
-</section>
+    <div class="main-container">
+      <div class="nav-wrapper container" id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <h2 class="my-name">Mary Xu</h2>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<section id="projects">
-    <div>
-        <h2 class="section-title">Projects</h2>
-    </div>
-    <ul class="project-items div-max-width">
-        <li class="project">
-            <div class="project-title">Girls in STEM Website</div>
-            <figure>
-                <div class="view">
-                    <img src="assets/images/girls-in-stem.png"/>
-                </div>
-                <figcaption>
-                    <p>Tools: HTML, CSS, JavaScript, PHP</p>
-                    <button class="project-link" onclick="location.href='http://www.irvington.org/girlsinstem'" type="button">Website</button>
-                    <p>Designed and developed website for high school club.</p>
-                    <br>
-                </figcaption>
-            </figure>
-        </li>
-        <li class="project">
-            <figure>
-                <div class="project-title">Bluetooth RC Drone Car</div>
-                <div class="view">
-                    <img src="assets/images/rc-cars.jpg"/>
-                </div>
-                <figcaption>
-                    <p>Tools: Ardunio, electronic prototyping, CAD</p>
-                    <button class="project-link" onclick="location.href='http://www.instructables.com/id/Bluetooth-RC-Drone-Car/'" type="button">Instructables</button>
-                    <p>App-controlled toy car for robotics SIDE project.</p>
-                    <br>
-                </figcaption>
-            </figure>
-        </li>
-        <li class="project">
-            <figure>
-                <div class="project-title">BT Position Device for Child Monitoring</div>
-                <div class="view">
-                    <img src="assets/images/child-monitor.png"/>
-                </div>
-                <figcaption>
-                    <p>Tools: Ardunio, Java (Android Studio)</p>
-                    <button class="project-link" onclick="location.href='assets/ScienceFair.pptx'" type="button">Presentation</button>
-                    <p>Alameda County Sciecne and Engineering Fair; Mechanical Engineering and Instruments 1st Place</p>
-                    <br>
-                </figcaption>
-            </figure>
-        </li>
-    </ul>
-
-</section>
-
-<section id="contact">
-    <div>
-        <h2 class="section-title">Contact Me</h2>
-    </div>
-    <div class="centered-absolute">
-        <div class = "icon-row">
-            <a href="mailto:ruili.xu@berkeley.edu" target="_blank">
-                <i class="fa fa-envelope hover-opacity fa-3x"></i>
-            </a>
-            <a href="https://www.github.com/rlxu" target="_blank">
-                <i class="fa fa-github hover-opacity fa-3x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/ruili-xu/" target="_blank">
-                <i class="fa fa-linkedin hover-opacity fa-3x"></i>
-            </a>
-            <a href="https://www.facebook.com/maryxu99" target="_blank">
-                <i class="fa fa-facebook-official hover-opacity fa-3x"></i>
-            </a>
+          <div class="collapse navbar-collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto nav-tabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link menu-item active" href="#" data-toggle="tab" aria-selected="true">About <span class="sr-only">(current)</span> </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#" data-toggle="tab" aria-selected="false">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link menu-item" href="#" data-toggle="tab" aria-selected="false">Resume</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div id="content" class="container">
+        <div class="about row">
+          <div class="col-lg-4 order-lg-12">
+            <img class="portrait float-lg-right" src="images/portrait.jpg"/>
+          </div>
+          <div class="paragraph col-lg-8 order-lg-1">
+            <p> Hello! I am an incoming second-year computer science student at UC Berkeley and a current mobile development intern at <a class="fb" href="https://www.facebook.com/careers/university/fbueng">Facebook</a>. During the school year, I am also a project developer at <a class="cb" href="https://codebase.berkeley.edu/">Berkeley CodeBase</a>. </br></br>
+            I have 3 years of programming experience, having done work and projects in front-end web development, Android mobile development, and robotics teaching. My other interests include the Maker Movement, logic puzzles and urban dance. Overall, I am passionate about creating technology that can better our everyday lives, and I am always looking for opportunities to learn. </br></br>
+            Feel free to check out some of my past projects or connect with me below! </p>
+          </div>
         </div>
+      </div>
+      <div class="footer">
+        <hr id="footer-line"/>
+        <div class="container">
+          <div class = "icon-row d-flex justify-content-center">
+            <a class="icon-link" href="mailto:ruili.xu@berkeley.edu" target="_blank">
+                <i class="fa fa-envelope hover-opacity mail fa-2x"></i>
+            </a>
+            <a class="icon-link" href="https://www.github.com/rlxu" target="_blank">
+                <i class="fa fa-github hover-opacity git fa-2x"></i>
+            </a>
+            <a class="icon-link" href="https://www.linkedin.com/in/ruili-xu/" target="_blank">
+                <i class="fa fa-linkedin hover-opacity linkedin fa-2x"></i>
+            </a>
+            <a class="icon-link" href="https://www.facebook.com/maryxu99" target="_blank">
+                <i class="fa fa-facebook-official hover-opacity fb fa-2x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
 
-<footer class="bottom-absolute">
-    <p class="copyright">&copy; Mary Xu 2017</p>
-</footer>
-
-<script src="script.js"></script>
-</body>
+    <!-- JavaScript: jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </html>
