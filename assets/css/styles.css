@@ -21,13 +21,14 @@
 
 .main-container {
   max-width: 1200px;
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
 
 #nav-bar {
   width: 100%;
   font-family: 'Sunflower', sans-serif;
+  font-weight: 500;
   overflow: hidden;
   background-color: white;
   z-index: 1;
@@ -39,18 +40,6 @@
 
 .my-name {
   font-size: 45px;
-}
-
-@media screen and (max-width: 640px){
-  .my-name {
-    font-size: 36px;
-  }
-}
-
-@media screen and (max-width: 480px){
-  .my-name {
-    font-size: 30px;
-  }
 }
 
 .menu-item {
@@ -85,17 +74,17 @@
   color: #3b5998;
 }
 
-.fb:hover {
-  font-weight: bold;
-  color: grey;
-}
-
 .cb {
   font-weight: bold;
   color: #00B0DA;
 }
 
-.cb:hover {
+.csm {
+  font-weight: bold;
+  color: #66BB6A;
+}
+
+#link:hover {
   font-weight: bold;
   color: grey;
 }
@@ -111,11 +100,66 @@
   box-shadow: 4px 4px 1px #b9b9b9;
 }
 
+.subtitle {
+  font-family: 'Sunflower', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  color: #696969;
+}
+
+.proj-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.proj-item {
+  font-size: 14px;
+  width: 310px;
+  margin: 10px 0px 10px 0px;
+  display: inline-block;
+}
+
+.middle-item {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.embedded {
+  height: 1000px;
+  display: block;
+}
+
+.download {
+  display: none;
+  text-align: center;
+}
+
+#resume-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.resume {
+  color: #7e7e7e;
+  font-weight: bold;
+}
+
+.resume:hover {
+  color: #151515;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d2d2d;
+}
+
 .footer {
   position: relative;
   margin-top: 120px;
-  margin-left: 16px;
-  margin-right: 16px;
   height: 100px;
   line-height: 50px;
 }
@@ -125,10 +169,7 @@
   height: 1px;
   border: 0;
   border-top: 1px solid #d3d3d3;
-  margin-bottom: 0;
-  margin-top: 0;
-  margin-left: 16px;
-  margin-right: 16px;
+  margin: 0px 16px 0px 16px;
 }
 
 .icon-row {
@@ -164,4 +205,45 @@
 
 .fb:hover {
   color: #3b5998;
+}
+
+@media screen and (max-width: 900px){
+  .embedded {
+    height: 550px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .my-name {
+    font-size: 36px;
+  }
+  .main-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .proj-item {
+    font-size: 14px;
+    width: 260px;
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d2d2d;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .my-name {
+    font-size: 30px;
+  }
+  .embedded {
+    display: none;
+  }
+  .download {
+    display: block;
+  }
 }
