@@ -3,8 +3,8 @@
 }
 
 #my-logo {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 130px;
+  max-height: 130px;
   width: 18%;
   min-width: 80px;
   border-radius: 12px;
@@ -71,12 +71,12 @@
 
 .fb {
   font-weight: bold;
-  color: #3b5998;
+  color: #076DEB;
 }
 
 .cb {
   font-weight: bold;
-  color: #00B0DA;
+  color: #2F3B79;
 }
 
 .csm {
@@ -90,7 +90,7 @@
 }
 
 .portrait {
-  max-width: 230px;
+  max-width: 260px;
   min-width: 180px;
   width: 90%;
   margin: 0 auto;
