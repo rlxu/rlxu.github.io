@@ -7,7 +7,7 @@
 
     <!-- Import fonts -->
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Sunflower:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
@@ -19,55 +19,33 @@
     <script src="assets/js/before.js"></script>
   </head>
   <body>
-    <div class="top">
-      <img id="my-logo" onload="fadeIn()" src="images/logo.png"/>
-    </div>
     <div class="main-container">
       <div class="container" id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light mynav">
           <a class="navbar-brand" href="#">
             <h2 class="my-name">Mary Xu</h2>
           </a>
-          <button class="navbar-toggler nav-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars fa-lg"></i>
-          </button>
-
-          <div class="collapse navbar-collapse w-100 dual-collapse2" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
-                <a class="nav-link menu-item active" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-expanded="true">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link menu-item" id="resume-tab" data-toggle="tab" href="#resume" role="tab" aria-controls="resume" aria-expanded="false">Resume</a>
+                <a class="nav-link menu-item" id="resume-tab" href="assets/Mary_Xu_Resume.pdf" aria-controls="resume" aria-expanded="false" target="_blank">resume</a>
               </li>
             </ul>
-          </div>
         </nav>
-        <hr id="divider-line"/>
       </div>
       <div id="content" class="tab-content container">
         <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-          <div class="gen-frame row">
-            <div class="col-lg-4 order-lg-12">
-              <img class="portrait float-lg-right" src="images/portrait.jpg"/>
-            </div>
-            <div class="paragraph col-lg-8 order-lg-1">
-              <p> Hello! I am currently a third-year computer science student at UC Berkeley from the Bay Area. Over the summer, I worked as a software engineering intern at <a class="fb" id="link" href="https://www.facebook.com">Facebook</a> on the Pages Core Experience team. During the school year, I am also a project manager at <a class="cb" id="link" href="https://codebase.berkeley.edu/">Berkeley CodeBase</a> and a <a class="csm" id="link" href="https://csmentors.berkeley.edu/#/">Computer Science Mentor</a> for Berkeley's introductory course CS 61A. <br><br>
-              I have 4 years of programming experience, having done work and projects in frontend development, full-stack web development, and Android mobile development. My other interests include the Maker Movement, logic puzzles and urban dance. Overall, I am passionate about creating technology that can better our everyday lives, and I am always looking for opportunities to learn! <br><br>
-              Feel free to check out my past experiences or connect with me below! </p>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="resume" role="tabpanel" aria-labelledby="resume-tab">
           <div class="gen-frame">
-            <div class="embedded">
-              <embed src="assets/Mary_Xu_Resume.pdf" id="resume-embed"/>
+            <div class="picture">
+              <img class="overlay" src="images/logo.png"/>
+              <img class="underlay" src="images/portrait.jpg"/>
             </div>
-            <div class="download">
-              <a class="resume icon-link" href="assets/Mary_Xu_Resume.pdf">
-                <i class="fa fa-download hover-opacity resume fa-2x"></i><br />
-                Resume
-              </a>
+            <div class="paragraph">
+              <p> Hello! I'm currently a third-year computer science student at UC Berkeley from the Bay Area. This summer, I will be a software engineering intern at <a class="asana" id="link" href="https://www.asana.com/" target="_blank">Asana</a>. In the past, I've worked as a software engineering intern at <a class="fb" id="link" href="https://www.facebook.com" target="_blank">Facebook</a> on the Pages Core Experience team and the FBU Android program.
+              During the school year, I'm involved as an iOS app developer for <a class="dc" id="link" href="https://www.dailycal.org/" target="_blank">The Daily Cal</a>, and I've also been a project manager at <a class="cb" id="link" href="https://codebase.berkeley.edu/" target="_blank">Berkeley CodeBase</a> and a <a class="csm" id="link" href="https://csmentors.berkeley.edu/#/" target="_blank">Computer Science Mentor</a> for Berkeley's introductory course CS 61A. <br><br>
+              I have 5 years of programming experience, having done work and projects in frontend, full-stack, and mobile development. My other interests include photography, logic puzzles, urban dance, and building
+              <a class="amazn" id="link" href="https://www.amazon.com/gp/search/ref=as_li_qf_sp_sr_tl?ie=UTF8&tag=rlxu-20&keywords=miniature dollhouse&index=aps&camp=1789&creative=9325&linkCode=ur2&linkId=b14706e70e065aa2b962adf7ef57afdc" target="_blank">mini furniture</a>.
+              Overall, I'm passionate about creating technology that can better our everyday lives and always excited about new opportunities to learn. <br><br>
+              Feel free to check out my past experiences or connect with me below! </p>
             </div>
           </div>
         </div>
